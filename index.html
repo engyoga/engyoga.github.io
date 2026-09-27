@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=14">
+  <link rel="stylesheet" href="styles.css?v=15">
 </head>
 <body>
   <header class="site-header">
@@ -49,7 +49,26 @@
 
     <section class="intro section-pad" id="about">
       <div class="intro-label"><span class="eyebrow-line"></span> Практика, що починається з вас</div>
-      <div class="intro-content"><h2>Менше тиску.<br><em>Більше присутності.</em></h2><div class="intro-text"><p>Йога — не про те, щоб кудись дістатися. Вона про повернення до себе — вдих за вдихом.</p><p>На моїх заняттях зрозумілі підказки англійською та комфортний темп допоможуть розслабитися — чи ви вперше на килимку, чи повертаєтеся до практики.</p><a class="text-link" href="#contact">Трохи про мене <span>↗︎</span></a></div></div>
+      <div class="intro-tabs" role="tablist" aria-label="Про курс">
+        <button class="intro-tab" id="about-tab-0" type="button" role="tab" aria-selected="true" aria-controls="about-slide-0" tabindex="0">Про що?</button>
+        <button class="intro-tab" id="about-tab-1" type="button" role="tab" aria-selected="false" aria-controls="about-slide-1" tabindex="-1">Що дасть курс?</button>
+        <button class="intro-tab" id="about-tab-2" type="button" role="tab" aria-selected="false" aria-controls="about-slide-2" tabindex="-1">Кому підійде курс?</button>
+      </div>
+      <div class="intro-carousel" id="about-carousel">
+        <article class="intro-slide" id="about-slide-0" role="tabpanel" aria-labelledby="about-tab-0" tabindex="0">
+          <h2>Менше тиску.<br><em>Більше присутності.</em></h2>
+          <p>Йога — не про те, щоб кудись дістатися. Вона про повернення до себе — вдих за вдихом.</p>
+        </article>
+        <article class="intro-slide" id="about-slide-1" role="tabpanel" aria-labelledby="about-tab-1" tabindex="0" hidden>
+          <h2>Англійська —<br><em>у комфортному темпі.</em></h2>
+          <p>Зрозумілі підказки англійською та комфортний темп допоможуть розслабитися й зосередитися на практиці.</p>
+        </article>
+        <article class="intro-slide" id="about-slide-2" role="tabpanel" aria-labelledby="about-tab-2" tabindex="0" hidden>
+          <h2>Починайте<br><em>з будь-якого рівня.</em></h2>
+          <p>Курс підійде тим, хто вперше на килимку, і тим, хто повертається до практики. Досвід не потрібен.</p>
+        </article>
+        <button class="intro-next" type="button" aria-label="Наступна тема курсу"><span aria-hidden="true">→</span></button>
+      </div>
       <div class="intro-bottom"><span>01 — НАШ ПІДХІД</span><span>Візьміть потрібне. Решту залиште.</span></div>
     </section>
 
@@ -67,7 +86,7 @@
 
     <section class="contact section-pad" id="contact"><div class="contact-sun">✳︎</div><p class="eyebrow"><span class="eyebrow-line"></span> На вас чекає килимок</p><h2>Починайте,<br><em>коли будете готові.</em></h2><p class="contact-sub">Цікавить заняття? Розкажіть трохи про себе — і ми разом знайдемо, з чого почати.</p><a class="button button-light" href="mailto:hello@englishyoga.com">Напишіть мені <span>↗︎</span></a><p class="contact-detail">Досвід не потрібен. Просто приходьте.</p></section>
   </main>
-  <footer class="footer"><a class="brand" href="#top"><span class="brand-mark">s</span><span>Speak Your<br>Practice</span></a><span class="footer-note">Практика для справжнього життя.</span><div class="footer-links"><a href="#classes">Заняття</a><a href="mailto:hello@englishyoga.com">Зв’язатися</a><a href="#top">Instagram ↗︎</a></div><span class="copyright">© 2026 · v14 Speak Your Practice</span></footer>
-  <script src="script.js"></script>
+  <footer class="footer"><a class="brand" href="#top"><span class="brand-mark">s</span><span>Speak Your<br>Practice</span></a><span class="footer-note">Практика для справжнього життя.</span><div class="footer-links"><a href="#classes">Заняття</a><a href="mailto:hello@englishyoga.com">Зв’язатися</a><a href="#top">Instagram ↗︎</a></div><span class="copyright">© 2026 · v15 Speak Your Practice</span></footer>
+  <script src="script.js?v=15"></script>
 </body>
 </html>
