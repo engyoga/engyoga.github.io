@@ -47,9 +47,10 @@
   .footer{padding:23px 22px calc(23px + env(safe-area-inset-bottom));gap:19px 12px}
   .footer-links{gap:10px 14px}
 }@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
-.hero-lead{max-width:450px;margin:0 0 15px;color:var(--ink);font-family:'Montserrat',Arial,sans-serif;font-size:20px;line-height:1.4;font-weight:300;letter-spacing:.08em;text-transform:none}
+.hero-lead{max-width:450px;margin:0 0 15px;color:var(--ink);font-family:'Montserrat',Arial,sans-serif;font-size:20px;line-height:1.4;font-weight:500;letter-spacing:.08em;text-transform:none}
 .hero-points{max-width:390px;margin:0 0 18px;padding-left:20px;color:var(--ink);font-family:'Montserrat',Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.65;letter-spacing:.08em;text-transform:none}
-.hero .eyebrow,.hero-lead,.hero-points,.hero-points li{font-family:'Montserrat',Arial,sans-serif!important;font-style:normal!important;font-weight:300!important;letter-spacing:.08em}
+.hero .eyebrow,.hero-points,.hero-points li{font-family:'Montserrat',Arial,sans-serif!important;font-style:normal!important;font-weight:300!important;letter-spacing:.08em}
+.hero-lead{font-family:'Montserrat',Arial,sans-serif!important;font-style:normal!important;font-weight:500!important;letter-spacing:.08em}
 .hero-answer{display:flex;align-items:center;gap:3px;margin:0;color:var(--ink);font-size:14px;line-height:1}
 .button-lotus{position:relative;flex:none;width:106px;height:78px;min-height:0;padding:0;display:inline-grid;place-items:center;gap:0;border:0;border-radius:0;background:transparent;color:var(--olive);transition:transform .2s ease}
 .button-lotus:hover{transform:translateY(-2px)}
