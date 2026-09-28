@@ -58,6 +58,17 @@
 .button-lotus:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
 .button-lotus svg{display:block;width:100%;height:100%;fill:currentColor;opacity:.58}
 .button-lotus span{position:absolute;top:75%;left:50%;transform:translate(-50%,-50%);color:var(--ink);font-family:'Montserrat',Arial,sans-serif;font-size:14px;font-weight:500;letter-spacing:.02em}
+.teacher-story{display:grid;grid-template-columns:.85fr 1.15fr;align-items:center;gap:9%;padding-top:100px;padding-bottom:100px;background:#e8e8df}
+.teacher-story-copy{max-width:430px}
+.teacher-story-copy .eyebrow{margin-bottom:25px}
+.teacher-story-copy h2{margin:0 0 28px;font:400 clamp(42px,5vw,68px)/1.05 var(--serif);letter-spacing:-.045em}
+.teacher-story-copy h2 em{color:var(--olive);font-weight:400}
+.teacher-story-prompt{max-width:360px;margin:0;color:#585e53;font-size:14px;line-height:1.8}
+.teacher-story-media{position:relative;min-width:0;margin:0;aspect-ratio:1.42;overflow:hidden;background:#aeb8a3}
+.teacher-story-media img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 48%;filter:saturate(.7)}
+.teacher-story-media figcaption{position:absolute;inset:auto 18px 18px;display:flex;align-items:center;gap:10px;color:#fff;font-size:10px;letter-spacing:.12em;text-transform:uppercase;text-shadow:0 1px 8px rgba(0,0,0,.45)}
+.teacher-story-play{display:grid;width:34px;height:34px;place-items:center;border:1px solid rgba(255,255,255,.85);border-radius:50%;font-size:11px;letter-spacing:0;padding-left:2px}
+.hero h1{line-height:1}
 @media(max-width:620px){
   .hero .eyebrow{font-size:10px}
   .hero-lead{font-size:17px;margin-bottom:11px}
@@ -65,8 +76,13 @@
   .hero-answer{gap:0;font-size:13px}
   .button-lotus{width:112px;height:66px}
   .button-lotus span{font-size:13px}
+  .teacher-story{grid-template-columns:1fr;gap:30px;padding-top:68px;padding-bottom:68px}
+  .teacher-story-copy h2{font-size:clamp(38px,11vw,50px);margin-bottom:19px}
+  .teacher-story-copy .eyebrow{font-size:8px;margin-bottom:18px}
+  .teacher-story-prompt{font-size:13px}
+  .teacher-story-media{aspect-ratio:1.12}
+  .teacher-story-media figcaption{inset:auto 13px 13px}
 }
-.hero h1{line-height:1}
 .intro-tabs{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:18px;margin:25px 0 14px}
 .intro-label{font-family:'Montserrat',Arial,sans-serif;font-weight:300;letter-spacing:.08em}
 .intro-tab{padding:11px 0;border:0;border-bottom:1px solid transparent;background:transparent;color:var(--ink);font-family:var(--sans);font-size:13px;font-weight:400;letter-spacing:0;text-align:center;cursor:pointer}
