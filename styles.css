@@ -114,3 +114,25 @@
   .intro-course-list{gap:5px;padding-left:17px;font-size:11px;line-height:1.4}
   .intro-next{right:12px;width:36px;height:36px;font-size:21px}
 }
+.pricing{padding-top:88px;padding-bottom:92px;background:var(--paper)}
+.pricing-heading{margin-bottom:30px}
+.pricing-heading .eyebrow{margin-bottom:18px}
+.pricing-heading h2{margin:0;font:400 clamp(48px,6vw,76px)/1 var(--serif);letter-spacing:-.04em}
+.pricing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:stretch}
+.price-package{display:flex;min-height:410px;flex-direction:column;align-items:flex-start;padding:30px 32px 28px}
+.price-package-individual{background:var(--olive);color:var(--paper)}
+.price-package-group{background:#d8c1ab;color:var(--ink)}
+.price-package-number{font:italic 14px var(--serif);opacity:.75}
+.price-package h3{max-width:390px;margin:62px 0 0;font:400 clamp(30px,3.3vw,44px)/1.1 var(--serif)}
+.price-package-cost{margin:auto 0 18px;font-size:13px;line-height:1.5}
+.price-package a{display:inline-flex;min-height:44px;align-items:center;gap:22px;border-bottom:1px solid currentColor;font-size:12px;letter-spacing:.02em}
+.price-package a span{font-size:16px;transition:transform .2s ease}
+.price-package a:hover span{transform:translate(2px,-2px)}
+@media(max-width:620px){
+  .pricing{padding-top:62px;padding-bottom:66px}
+  .pricing-heading{margin-bottom:22px}
+  .pricing-heading h2{font-size:50px}
+  .pricing-grid{grid-template-columns:1fr;gap:12px}
+  .price-package{min-height:330px;padding:23px 22px 22px}
+  .price-package h3{margin-top:48px;font-size:34px}
+}
