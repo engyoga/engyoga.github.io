@@ -78,6 +78,9 @@
 .intro-slide h2{max-width:650px;margin:0 0 23px;color:var(--paper);font:400 44px/1.08 var(--serif)}
 .intro-slide h2 em{color:#e8e8df}
 .intro-slide p{max-width:620px;margin:0;color:var(--paper);font-size:15px;line-height:1.7}
+.intro-slide .intro-course-description{max-width:760px;margin:0 0 18px;font-size:15px;line-height:1.65}
+.intro-slide .intro-course-lead{margin:0 0 7px;font-weight:600}
+.intro-course-list{display:grid;gap:7px;margin:0;padding-left:20px;color:var(--paper);font-size:13px;line-height:1.5}
 .intro-next{position:absolute;top:50%;right:24px;display:grid;width:46px;height:46px;place-items:center;transform:translateY(-50%);border:1px solid rgba(245,242,235,.65);border-radius:50%;background:transparent;color:var(--paper);font:400 25px/1 var(--sans);cursor:pointer;transition:background .2s ease,color .2s ease}
 .intro-next:hover{background:var(--paper);color:var(--olive)}
 @media(max-width:850px){
@@ -90,5 +93,8 @@
   .intro-carousel{min-height:290px;padding:28px 58px 30px 22px}
   .intro-slide h2{margin-bottom:17px;font-size:31px;line-height:1.12}
   .intro-slide p{font-size:13px;line-height:1.6}
+  .intro-slide .intro-course-description{margin-bottom:13px;font-size:12px;line-height:1.5}
+  .intro-slide .intro-course-lead{margin-bottom:5px}
+  .intro-course-list{gap:5px;padding-left:17px;font-size:11px;line-height:1.4}
   .intro-next{right:12px;width:36px;height:36px;font-size:21px}
 }
