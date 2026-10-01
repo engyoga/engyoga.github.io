@@ -123,7 +123,7 @@
 .pricing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:stretch}
 .price-package{display:flex;min-height:410px;flex-direction:column;align-items:flex-start;padding:30px 32px 28px}
 .price-package-individual{background:var(--olive);color:var(--paper)}
-.price-package-group{background:#d8c1ab;color:var(--ink)}
+.price-package-group{background:var(--rose-background);color:var(--ink)}
 .price-package-number{font:italic 14px var(--serif);opacity:.75}
 .price-package h3{max-width:390px;margin:62px 0 0;font:400 clamp(30px,3.3vw,44px)/1.1 var(--serif)}
 .price-package-cost{margin:auto 0 18px;font-size:13px;line-height:1.5}
@@ -150,7 +150,7 @@
 .faq-item.is-open .faq-question:after{content:"–"}
 .faq-question:hover{filter:brightness(.97)}
 .faq-question:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
-.faq-answer{margin-top:-8px;padding:26px 24px 22px;border-radius:0 0 22px 22px;background:#d8c1ab;color:var(--ink)}
+.faq-answer{margin-top:-8px;padding:26px 24px 22px;border-radius:0 0 22px 22px;background:var(--rose-background);color:var(--ink)}
 .faq-answer p{max-width:720px;margin:0;font-size:15px;line-height:1.7}
 @media(max-width:620px){
   .faq{padding-bottom:66px}
@@ -203,3 +203,5 @@
   .footer-links{gap:10px 14px;font-size:14px}
   .copyright{font-size:12px}
 }
+
+:root{--clay:#d197a5;--rose-light:#f3d6dd;--rose-mid:#dfaeb9;--rose-background:#f1e4e6}
