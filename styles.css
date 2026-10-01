@@ -207,6 +207,12 @@
 :root{--clay:#d197a5;--rose-light:#f3d6dd;--rose-mid:#dfaeb9;--rose-background:#f1e4e6;--rose-soft:#e8d2d7}
 .card-ground{background:var(--rose-background)}
 .contact .button-light{background:var(--clay);border-color:var(--clay)}
+.hero-image{background-image:linear-gradient(180deg,rgba(37,41,34,.01),rgba(37,41,34,.05)),url('images/%D1%80%D0%B5%D1%82%D1%83%D1%88%20%D1%8F.jpg')}
+.hero-image{background-size:contain;background-position:center;background-repeat:no-repeat}
+.hero-image{inset:auto;top:50%;left:50%;right:auto;bottom:auto;width:min(38vw,370px);height:auto;aspect-ratio:3 / 4;transform:translate(-50%,-50%)}
+@media(max-width:620px){
+  .hero-image{width:min(58vw,250px)}
+}
 @media(min-width:851px){
   .stories-band{padding:36px 24px 40px}
   .stories-carousel{display:grid;grid-template-columns:48px auto 48px;grid-template-rows:auto auto;align-items:center;justify-content:center;gap:0 18px;max-width:none;margin:0 auto}
