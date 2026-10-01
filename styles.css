@@ -53,11 +53,13 @@
 .hero .eyebrow{font-size:12px}
 .hero-lead{font-family:'Montserrat',Arial,sans-serif!important;font-style:normal!important;font-weight:500!important;letter-spacing:.08em}
 .hero-answer{display:flex;align-items:center;gap:0;margin:0;color:var(--ink);font-family:'Montserrat',Arial,sans-serif;font-size:14px;font-weight:400;letter-spacing:.02em;line-height:1}
-.button-lotus{position:relative;flex:none;width:128px;height:78px;min-height:0;margin-left:-12px;padding:0;display:inline-grid;place-items:center;gap:0;border:0;border-radius:0;background:transparent;color:var(--olive);transition:transform .2s ease}
+.button-lotus{position:relative;flex:none;width:180px;height:84px;min-height:0;margin-left:-12px;padding:0;display:inline-grid;place-items:center;gap:0;border:0;border-radius:0;background:transparent;color:var(--olive);transition:transform .2s ease}
 .button-lotus:hover{transform:translateY(-2px)}
 .button-lotus:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
-.button-lotus svg{display:block;width:100%;height:100%;fill:currentColor;opacity:.58}
-.button-lotus span{position:absolute;top:75%;left:50%;transform:translate(-50%,-50%);color:var(--ink);font-family:'Montserrat',Arial,sans-serif;font-size:14px;font-weight:500;letter-spacing:.02em}
+.button-lotus svg{display:block;width:100%;height:100%;fill:currentColor;opacity:1}
+.button-lotus .lotus-pill{transition:fill .25s ease}
+.button-lotus:hover .lotus-pill{fill:var(--sage)}
+.button-lotus span{position:absolute;top:79.3%;left:50%;transform:translate(-50%,-50%);color:var(--ink);font-family:'Montserrat',Arial,sans-serif;font-size:14px;font-weight:500;letter-spacing:.02em}
 .teacher-story{display:grid;grid-template-columns:.85fr 1.15fr;align-items:center;gap:9%;padding-top:100px;padding-bottom:100px;background:#e8e8df}
 .teacher-story-copy{max-width:430px}
 .teacher-story-copy .eyebrow{margin-bottom:25px}
@@ -74,7 +76,7 @@
   .hero-lead{font-size:17px;margin-bottom:11px}
   .hero-points{padding-left:18px;margin-bottom:16px;font-size:14px;line-height:1.55}
   .hero-answer{gap:0;font-size:13px}
-  .button-lotus{width:112px;height:66px}
+  .button-lotus{width:150px;height:70px}
   .button-lotus span{font-size:13px}
   .teacher-story{grid-template-columns:1fr;gap:30px;padding-top:68px;padding-bottom:68px}
   .teacher-story-copy h2{font-size:clamp(38px,11vw,50px);margin-bottom:19px}
