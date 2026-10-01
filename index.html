@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=24">
+  <link rel="stylesheet" href="styles.css?v=25">
 </head>
 <body>
   <header class="site-header">
@@ -123,11 +123,87 @@
       </div>
     </section>
 
-    <section class="quote-band" id="stories"><div class="quote-decoration">“</div><p class="eyebrow">Враження з килимка</p><blockquote>«Нарешті я відчуваю, що можу бути собою на занятті з йоги. Усі пояснення дуже зрозумілі, а вся практика — наче глибокий вдих».</blockquote><div class="quote-byline"><span class="avatar">М</span><span>Мая <small>Займається з 2023 року</small></span><span class="quote-stars">★★★★★</span></div><div class="quote-counter">01 <span>—</span> 03</div></section>
+    <section class="faq section-pad" id="faq">
+      <div class="faq-heading">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Відповіді перед стартом</p>
+        <h2>Питання</h2>
+      </div>
+      <div class="faq-list">
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">Що робити якщо не виходить доєднатися до заняття?</button>
+          <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1" hidden>
+            <p>Відповідь з’явиться тут.</p>
+          </div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">Чи будуть записи занять, якщо я пропущу урок?</button>
+          <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2" hidden>
+            <p>Відповідь з’явиться тут.</p>
+          </div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">Від якого рівня англійської можна доєднуватись до цього курсу?</button>
+          <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3" hidden>
+            <p>Відповідь з’явиться тут.</p>
+          </div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">Як проходить оплата?</button>
+          <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4" hidden>
+            <p>Відповідь з’явиться тут.</p>
+          </div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">Чи можна розбити оплату на окремі платежі?</button>
+          <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5" hidden>
+            <p>Відповідь з’явиться тут.</p>
+          </div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-6" id="faq-question-6">Курс більше орієнтований на йога-практиків?</button>
+          <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6" hidden>
+            <p>Відповідь з’явиться тут.</p>
+          </div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-7" id="faq-question-7">Скільки часу потрібно буде приділяти навчанню поза заняттями?</button>
+          <div class="faq-answer" id="faq-answer-7" role="region" aria-labelledby="faq-question-7" hidden>
+            <p>Відповідь з’явиться тут.</p>
+          </div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-8" id="faq-question-8">Чи отримаю я матеріали після курсу?</button>
+          <div class="faq-answer" id="faq-answer-8" role="region" aria-labelledby="faq-question-8" hidden>
+            <p>Відповідь з’явиться тут.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-band stories-band" id="stories">
+      <p class="eyebrow">Враження з килимка</p>
+      <div class="stories-carousel" aria-label="Фото з занять">
+        <button class="stories-control stories-prev" type="button" aria-label="Попереднє фото"><span aria-hidden="true">←</span></button>
+        <div class="stories-frame">
+          <img class="stories-image" src="images/1.png" alt="Фото 1 із 5" draggable="false">
+        </div>
+        <button class="stories-control stories-next" type="button" aria-label="Наступне фото"><span aria-hidden="true">→</span></button>
+        <div class="stories-pagination">
+          <div class="stories-dots" role="group" aria-label="Перейти до фото">
+            <button class="stories-dot is-active" type="button" aria-label="Фото 1" aria-current="true"></button>
+            <button class="stories-dot" type="button" aria-label="Фото 2"></button>
+            <button class="stories-dot" type="button" aria-label="Фото 3"></button>
+            <button class="stories-dot" type="button" aria-label="Фото 4"></button>
+            <button class="stories-dot" type="button" aria-label="Фото 5"></button>
+          </div>
+          <p class="stories-counter" aria-live="polite"><span class="stories-current">01</span> <span aria-hidden="true">—</span> 05</p>
+        </div>
+      </div>
+    </section>
 
     <section class="contact section-pad" id="contact"><div class="contact-sun">✳︎</div><p class="eyebrow"><span class="eyebrow-line"></span> На вас чекає килимок</p><h2>Починайте,<br><em>коли будете готові.</em></h2><p class="contact-sub">Цікавить заняття? Розкажіть трохи про себе — і ми разом знайдемо, з чого почати.</p><a class="button button-light" href="mailto:hello@englishyoga.com">Напишіть мені <span>↗︎</span></a><p class="contact-detail">Досвід не потрібен. Просто приходьте.</p></section>
   </main>
   <footer class="footer"><a class="brand" href="#top"><span class="brand-mark">s</span><span>Speak Your<br>Practice</span></a><span class="footer-note">Практика для справжнього життя.</span><div class="footer-links"><a href="#classes">Заняття</a><a href="mailto:hello@englishyoga.com">Зв’язатися</a><a href="#top">Instagram ↗︎</a></div><span class="copyright">© 2026 · v24 Speak Your Practice</span></footer>
-  <script src="script.js?v=15"></script>
+  <script src="script.js?v=16"></script>
 </body>
 </html>

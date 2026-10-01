@@ -59,3 +59,72 @@ if (introTabs.length && introSlides.length && introCarousel && introNext) {
     touchStartX = null;
   }, { passive: true });
 }
+
+const storiesCarousel = document.querySelector('.stories-carousel');
+
+if (storiesCarousel) {
+  const storiesImage = storiesCarousel.querySelector('.stories-image');
+  const storiesPrevious = storiesCarousel.querySelector('.stories-prev');
+  const storiesNext = storiesCarousel.querySelector('.stories-next');
+  const storiesDots = [...storiesCarousel.querySelectorAll('.stories-dot')];
+  const storiesCurrent = storiesCarousel.querySelector('.stories-current');
+  const storiesFrame = storiesCarousel.querySelector('.stories-frame');
+  const storyImages = ['images/1.png', 'images/2.png', 'images/3.png', 'images/4.png', 'images/5.png'];
+  let activeStory = 0;
+  let touchStartX = null;
+
+  const showStory = (index) => {
+    activeStory = (index + storyImages.length) % storyImages.length;
+    storiesImage.src = storyImages[activeStory];
+    storiesImage.alt = `Фото ${activeStory + 1} із ${storyImages.length}`;
+    storiesCurrent.textContent = String(activeStory + 1).padStart(2, '0');
+    storiesDots.forEach((dot, dotIndex) => {
+      const isActive = dotIndex === activeStory;
+      dot.classList.toggle('is-active', isActive);
+      if (isActive) dot.setAttribute('aria-current', 'true');
+      else dot.removeAttribute('aria-current');
+    });
+  };
+
+  storiesPrevious.addEventListener('click', () => showStory(activeStory - 1));
+  storiesNext.addEventListener('click', () => showStory(activeStory + 1));
+  storiesDots.forEach((dot, index) => dot.addEventListener('click', () => showStory(index)));
+  storiesCarousel.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+      event.preventDefault();
+      showStory(activeStory + (event.key === 'ArrowRight' ? 1 : -1));
+    }
+  });
+  storiesFrame.addEventListener('touchstart', (event) => {
+    touchStartX = event.changedTouches[0].clientX;
+  }, { passive: true });
+  storiesFrame.addEventListener('touchend', (event) => {
+    if (touchStartX === null) return;
+    const distance = event.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(distance) > 45) showStory(activeStory + (distance < 0 ? 1 : -1));
+    touchStartX = null;
+  }, { passive: true });
+}
+
+document.querySelectorAll('.faq-item').forEach((item) => {
+  const question = item.querySelector('.faq-question');
+  const answer = item.querySelector('.faq-answer');
+  if (!question || !answer) return;
+
+  question.addEventListener('click', () => {
+    const isOpen = question.getAttribute('aria-expanded') === 'true';
+    document.querySelectorAll('.faq-item').forEach((other) => {
+      const otherQuestion = other.querySelector('.faq-question');
+      const otherAnswer = other.querySelector('.faq-answer');
+      if (!otherQuestion || !otherAnswer) return;
+      otherQuestion.setAttribute('aria-expanded', 'false');
+      otherAnswer.hidden = true;
+      other.classList.remove('is-open');
+    });
+    if (!isOpen) {
+      question.setAttribute('aria-expanded', 'true');
+      answer.hidden = false;
+      item.classList.add('is-open');
+    }
+  });
+});
