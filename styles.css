@@ -186,3 +186,18 @@
   .stories-dot{width:8px;height:8px}
   .stories-counter{font-size:8px}
 }
+
+.contact-sub{max-width:760px;font-size:24px;line-height:1.55}
+.contact .button-light{gap:24px;padding:30px 42px;font-family:'Montserrat',var(--sans);font-size:27px}
+.footer-note{max-width:100%;font-size:22px;line-height:1.35}
+.footer-links{gap:20px;font-size:18px}
+.footer-links{align-items:center}
+.footer-links a{display:inline-flex;align-items:center;line-height:1.2}
+.copyright{font-size:16px}
+@media(max-width:620px){
+  .contact-sub{font-size:19px;line-height:1.5}
+  .contact .button-light{max-width:100%;gap:12px;padding:16px 18px;font-size:18px;line-height:1.3}
+  .footer-note{font-size:17px}
+  .footer-links{gap:10px 14px;font-size:14px}
+  .copyright{font-size:12px}
+}
