@@ -230,6 +230,10 @@
 .intro-carousel{padding-top:36px;padding-bottom:36px}
 .intro-next-step{display:flex;justify-content:flex-start;margin-top:8px;transform:translateX(calc(14px - 4.8vw))}
 .intro-next-step .button-lotus{margin-left:0}
+.section-next{display:flex;justify-content:flex-start;width:fit-content;margin-top:20px;padding-left:clamp(0px,1.8vw,18px)}
+.section-next-center{justify-content:center;padding-left:0}
+.section-next .button-lotus{margin-left:0}
+.teacher-story .section-next{grid-column:1 / -1;justify-content:flex-start;margin-top:18px;padding-left:0}
 @media(min-width:621px) and (max-width:850px){
   .intro-next-step{transform:translateX(calc(129px - 18.2vw))}
 }
@@ -237,6 +241,8 @@
   .intro{padding-top:40px;padding-bottom:16px}
   .intro-carousel{min-height:280px;padding-top:22px;padding-bottom:24px}
   .intro-next-step{margin-top:6px;transform:translateX(13px)}
+  .section-next{margin-top:16px;padding-left:0}
+  .section-next-center{justify-content:center}
 }
 @media(min-width:851px){
   .stories-band{padding:36px 24px 40px}
